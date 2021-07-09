@@ -68,12 +68,17 @@ console.log(score)
 
   return (
     <div >
-      <div className='leftside'></div>
-      <div className='rightside'></div>
-      
-      <div className='scoreboard'>Score: {score.length}</div>
-      <div className='highscore'>High Score: {highScore}</div>
 
+      <div className='title'>Memory Game</div>
+
+      <div className='leftside'></div>
+      <div className='rightside'>
+        <div className='scoreboard'>Score: {score.length}</div>
+        <div className='highscore'>High Score: {highScore}</div>
+      </div>
+
+      
+    <div className='wrapper'>
     <div className='container'>
       <div  >
       <img className={`${squares[0]} ${image}`} onClick={shiftSquares} src={pics[squares[0]]} height='400' width='180' alt='img1'/>
@@ -122,6 +127,7 @@ console.log(score)
       <div  >
       <img className={`${squares[11]} ${image}`} onClick={shiftSquares} src={pics[squares[11]]} height='400' width='180' alt='img12'/>
       </div>
+    </div>
     </div>
   </div>
   );
