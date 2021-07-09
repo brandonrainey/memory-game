@@ -23,7 +23,7 @@ const [highScore, setHighScore] = useState(0);
 const pics = [ES1, ES2, ES3, ES4, ES5, ES6, ES7, ES8, ES9, ES10, ES11, ES12];
 const image = 'image';
 
-
+shuffle(squares);
 
   function shuffle(array) {
   var currentIndex = array.length,  randomIndex;
@@ -68,6 +68,9 @@ console.log(score)
 
   return (
     <div >
+      <div className='leftside'></div>
+      <div className='rightside'></div>
+      
       <div className='scoreboard'>Score: {score.length}</div>
       <div className='highscore'>High Score: {highScore}</div>
 

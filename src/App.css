@@ -1,5 +1,5 @@
 :root {
-  background-color: rgb(13, 153, 111);
+  background-color: rgb(90, 122, 211);
 }
 
 .container {
@@ -26,6 +26,33 @@
 .highscore {
   text-align: center;
   margin-bottom: 30px;
+}
+
+.image:hover {
+  transform:scale(1.05);
+  border-color:rgb(235, 213, 18);
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.leftside {
+  height: 100%;
+ width: 200px;
+ position: absolute;
+ left: 0;
+ top: 0;
+ padding-top: 40px;
+ background-color: rgb(5, 49, 63);
+}
+
+.rightside {
+  height: 100%;
+  width: 200px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-top: 40px;
+  background-color: rgb(5, 49, 63);
 }
 
 
