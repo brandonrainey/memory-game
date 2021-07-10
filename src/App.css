@@ -1,58 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
 :root {
   background-color: rgb(90, 122, 211);
 }
 
-
-
-body { 
+body {
   height: 100%;
   margin: 0;
   overflow: hidden;
 }
 
-
-
 .container {
   display: grid;
   grid-template-columns: 200px 200px 200px 200px 200px 200px;
-  
+
   justify-content: center;
   margin-top: 0;
   grid-gap: 20px;
-  
 }
 
 .image {
   border: 4px solid rgb(0, 0, 0);
   border-radius: 25px;
-  
 }
-
-
 
 .highscore {
   text-align: center;
   margin-bottom: 30px;
-  color:rgb(53, 216, 181);
+  color: rgb(53, 216, 181);
 }
 
 .image:hover {
-  transform:scale(1.05);
-  border-color:rgb(235, 213, 18);
+  transform: scale(1.05);
+  border-color: rgb(235, 213, 18);
   box-shadow: 0 0 10px rgb(0, 0, 0);
   cursor: pointer;
 }
 
 .leftside {
   height: 100%;
- width: 200px;
- position: absolute;
- left: 0;
- top: 0;
- padding-top: 40px;
- background-color: rgb(5, 49, 63);
+  width: 200px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 40px;
+  background-color: rgb(5, 49, 63);
 }
 
 .rightside {
@@ -70,21 +62,17 @@ body {
   font-size: 50px;
   text-align: center;
   margin-bottom: 10px;
-  color:rgb(53, 216, 181);
-  
-  
+  color: rgb(53, 216, 181);
 }
 
 .wrapper {
   position: fixed;
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   flex-flow: column nowrap;
   margin-top: -50px;
-  
-  
 }
 
 .title {
@@ -93,26 +81,13 @@ body {
   padding: 0;
   margin: auto;
   border: 0;
-  font-family: 'Righteous';
-  
+  font-family: "Righteous";
   width: 50%;
   justify-content: center;
   text-decoration: underline;
-  
-  
 }
 
 .directions {
   font-weight: bold;
-  color:rgb(53, 216, 181);
+  color: rgb(53, 216, 181);
 }
-
-
-
-
-
-
-
-
-
-
