@@ -20,6 +20,7 @@ const [score, setScore] = useState([]);
 const [highScore, setHighScore] = useState(0);
 
 
+
 const pics = [ES1, ES2, ES3, ES4, ES5, ES6, ES7, ES8, ES9, ES10, ES11, ES12];
 const image = 'image';
 
@@ -44,26 +45,34 @@ shuffle(squares);
   return newSquares;
   }
 
+ 
+  
 
   const shiftSquares = (e) => {
     
-    
     if (!score.includes(e.target.classList[0])) {
       setScore(prevArray => [...prevArray, e.target.classList[0]]);
+      
     } else {
       setScore([]);
     }
 
-  
+   
 
     setSquares(() => shuffle(squares));
 
-    if (score.length >= highScore) {
-      setHighScore(() => score.length)
-    }
-console.log(score)
-    
+    myHighScore();
+    console.log(score.length)
+
   };
+
+  const myHighScore = () => {
+    if (score.length >= highScore) {
+        setHighScore(() => score.length)
+      } else return;
+  }
+
+ 
   
 
   return (
@@ -71,7 +80,9 @@ console.log(score)
 
       <div className='title'>Memory Game</div>
 
-      <div className='leftside'></div>
+      <div className='leftside'>
+        <p className='directions'>DIRECTIONS: <br/>Your goal is click each image just once! But every time you click one the images will randomly shuffle spots. Good Luck!</p>
+      </div>
       <div className='rightside'>
         <div className='scoreboard'>Score: {score.length}</div>
         <div className='highscore'>High Score: {highScore}</div>
